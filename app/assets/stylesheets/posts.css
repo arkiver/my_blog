@@ -1,0 +1,23 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+
+.center{
+    background: red;
+    width: 70%;
+    float: left;
+    height: 700px;
+}
+.left{
+    width: 15%;
+    float: left;
+    background: yellow;
+    height: 700px;
+}
+.right{
+    width: 15%;
+    float: left;
+    background: green;
+    height: 700px;
+}

@@ -39,7 +39,8 @@ gem 'dm-observer',     DM_VERSION
 gem "haml-rails"
 gem 'thin'
 gem 'pry-rails'
-
+gem 'execjs'
+gem 'therubyracer'
 
 group :development do
   gem 'debugger'
