@@ -11,7 +11,17 @@
  *= require_self
  *= require_tree .
  */
-
+html{
+    background:#3B3737;
+}
 body{
-    height: 100%;
+}
+
+.blog_header{
+    height: 70px;
+    background: red;
+    padding: 30px;
+}
+a{
+    text-decoration: none;
 }

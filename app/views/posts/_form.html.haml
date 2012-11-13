@@ -8,5 +8,15 @@
       %ul
         - @post.errors.full_messages.each do |msg|
           %li= msg
-  .actions
-    = f.submit 'Save'
+          .actions
+  .post_form
+    .field#title_form
+      = f.label :title
+      %br
+      = f.text_field :title
+    .field#content_form
+      = f.label :content
+      %br
+      = f.text_area :content
+  = f.submit 'Save'
+

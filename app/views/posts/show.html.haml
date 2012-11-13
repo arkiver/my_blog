@@ -1,5 +1,11 @@
 %p#notice= notice
-
+%table
+  .field
+    %tr
+      %td
+        = @post.title
+      %td
+        = @post.content
 
 = link_to 'Edit', edit_post_path(@post)
 \|
