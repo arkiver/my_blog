@@ -12,15 +12,25 @@
  *= require_tree .
  */
 html{
-    background:#3B3737;
+    background: cyan;
+    font-family: ubuntu;
 }
 body{
 }
-
+.hidden{
+    visibility:hidden;
+}
 .blog_header{
     height: 70px;
-    background: red;
-    padding: 30px;
+    margin-top:15px;
+    padding: 5px 0px 35px 30px;
+    font-style: oblique;
+    background: #FFFFCC;
+    border-radius: 20px;
+    font-size: 1.8em;
+}
+.title{
+    font-style: oblique;
 }
 a{
     text-decoration: none;

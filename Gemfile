@@ -42,6 +42,9 @@ gem 'pry-rails'
 gem 'execjs'
 gem 'therubyracer'
 
+gem 'devise', "2.0.4"
+gem 'dm-devise', "2.0.1"
+
 group :development do
   gem 'debugger'
   gem 'rspec-rails'

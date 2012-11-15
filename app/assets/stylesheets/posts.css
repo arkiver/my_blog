@@ -4,22 +4,21 @@
 */
 
 .center{
-    background: black;
-    color: grey;
-    width: 70%;
+    width: 80%;
     float: left;
+    min-height: 800px;
 }
 .left{
-    width: 15%;
+    width: 10%;
     float: left;
-    background: #3B3737;
 }
 .right{
-    width: 15%;
+    width: 10%;
     float: left;
-    background: #3B3737;
 }
 .post_box_index{
-    background: blue;
+    background: pink;
     padding: 20px;
+    margin-top: 10px;
+    border-radius: 20px;
 }
