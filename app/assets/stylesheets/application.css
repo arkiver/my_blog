@@ -17,19 +17,23 @@ html{
     color: black;
 }
 body{
-    color: black;
+    color: white;
 }
 .hidden{
     visibility:hidden;
 }
+.user_nav{
+    margin-top: 15px;
+    margin-left: 10px;
+}
 .blog_header{
-    height: 70px;
+    height: 100px;
     margin-top:15px;
     padding: 5px 0px 35px 30px;
     font-style: oblique;
     background: green;
     border-radius: 20px;
-    font-size: 1.8em;
+    font-size: 1.6em;
 }
 .title{
     font-style: oblique;

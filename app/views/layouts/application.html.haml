@@ -11,8 +11,12 @@
         '.'
     .center
       .blog_header
-        %h1
-          arkiver's archives
+        %h1#blog_header
+          = link_to "arkiver's archives", posts_path
       = yield
     .right
-
+      .user_nav
+        - if user_signed_in?
+          = link_to 'Sign out', destroy_user_session_path
+        - else
+          = link_to 'Sign in', user_session_path
