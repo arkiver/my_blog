@@ -1,12 +1,11 @@
-%h1
-  - @posts.each do |post|
-    .post_box_index
-      %tr
-        %td
-          .title
-            = link_to "#{post.title}", post
-          %br
-          %br
-          = post.content
+- @posts.each do |post|
+  .post_box_index
+    %tr
+      %td
+        .title
+          = link_to "#{post.title}", post
+        %br
+        %br
+        = post.content
 %br
 = link_to 'New Post', new_post_path

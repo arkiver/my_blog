@@ -12,10 +12,12 @@
  *= require_tree .
  */
 html{
-    background: cyan;
+    background: black;
     font-family: ubuntu;
+    color: black;
 }
 body{
+    color: black;
 }
 .hidden{
     visibility:hidden;
@@ -25,13 +27,15 @@ body{
     margin-top:15px;
     padding: 5px 0px 35px 30px;
     font-style: oblique;
-    background: #FFFFCC;
+    background: green;
     border-radius: 20px;
     font-size: 1.8em;
 }
 .title{
     font-style: oblique;
+    font-size: 1.5em;
 }
 a{
     text-decoration: none;
+    color: yellow;
 }
