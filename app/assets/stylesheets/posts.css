@@ -17,10 +17,11 @@
     float: left;
 }
 .post_box_index{
-    background: grey;
+    background: #F5F5F5;
     padding: 20px;
     margin-top: 10px;
     border-radius: 20px;
+    border:1px solid #DDDDDD
 }
 #edit_back_link{
     margin-top: 20px;
