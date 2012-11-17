@@ -24,7 +24,9 @@ class PostsController < ApplicationController
   # GET /posts/new
   # GET /posts/new.json
   def new
-    @post = Post.new
+    if user_signed_in?
+      @post = Post.new
+    end
 
     respond_to do |format|
       format.html # new.html.erb
@@ -34,7 +36,9 @@ class PostsController < ApplicationController
 
   # GET /posts/1/edit
   def edit
-    @post = Post.get(params[:id])
+    if user_signed_in?
+      @post = Post.get(params[:id])
+    end
   end
 
   # POST /posts
@@ -72,9 +76,10 @@ class PostsController < ApplicationController
   # DELETE /posts/1
   # DELETE /posts/1.json
   def destroy
-    @post = Post.get(params[:id])
-    @post.destroy
-
+    if user_signed_in?
+      @post = Post.get(params[:id])
+      @post.destroy
+    end
     respond_to do |format|
       format.html { redirect_to posts_url }
       format.json { head :no_content }
