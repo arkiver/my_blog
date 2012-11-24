@@ -43,5 +43,7 @@ class User
 
   property :id, Serial
 
+  property :created_at, DateTime, :lazy => true
+  property :updated_at, DateTime, :lazy => true
 
 end
