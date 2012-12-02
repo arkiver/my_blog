@@ -1,3 +1,6 @@
+- if user_signed_in?
+  = link_to 'New Post', new_post_path, :id => "new_post_link"
+%br
 - @posts.each do |post|
   .post_box_index
     %tr
@@ -8,6 +11,3 @@
         %br
         .content
           = post.content
-%br
-- if user_signed_in?
-  = link_to 'New Post', new_post_path
