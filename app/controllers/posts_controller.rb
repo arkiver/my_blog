@@ -78,7 +78,7 @@ class PostsController < ApplicationController
   def destroy
     if user_signed_in?
       @post = Post.get(params[:id])
-      @post.deleted = 1
+      @post.deleted = true
     end
     respond_to do |format|
       format.html { redirect_to posts_url }
