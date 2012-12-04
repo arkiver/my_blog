@@ -2,7 +2,7 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.all(:order => [:updated_at.desc])
+    @posts = Post.all(:order => [:updated_at.desc], :deleted => 0)
 
     respond_to do |format|
       format.html # index.html.erb
@@ -78,7 +78,7 @@ class PostsController < ApplicationController
   def destroy
     if user_signed_in?
       @post = Post.get(params[:id])
-      @post.destroy
+      @post.deleted = 1
     end
     respond_to do |format|
       format.html { redirect_to posts_url }
