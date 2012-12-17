@@ -48,6 +48,7 @@ gem 'dm-devise', "2.0.1"
 group :development do
   gem 'debugger'
   gem 'rspec-rails'
+  gem "better_errors"
 end
 
 # gems added by me ^
