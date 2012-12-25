@@ -2,7 +2,7 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.all(:order => [:updated_at.desc], :deleted => 0)
+    @posts = Post.all(:order => [:updated_at.desc], :deleted => false)
 
     respond_to do |format|
       format.html # index.html.erb

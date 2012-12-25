@@ -1,3 +1,5 @@
+
+
 class Post
   include DataMapper::Resource
 
