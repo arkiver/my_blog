@@ -29,3 +29,7 @@
 #new_post_link{
     float: right;
 }
+.post_updated_at{
+    font-size: 0.6em;
+    float: right;
+}

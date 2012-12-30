@@ -1,0 +1,15 @@
+
+---
+    environment: production
+    chdir: /home/deploy/my_blog
+    address: 127.0.0.1
+    user: deploy
+    group: deploy
+    port: 6077
+    rackup: /home/deploy/my_blog
+    log: /home/deploy/my_blog/log/thin.log
+    max_conns: 1024
+    timeout: 30
+    max_persistent_conns: 512
+    daemonize: true
+    servers: 3

@@ -2,6 +2,9 @@
 .post_box_index
   .title
     = @post.title
+    .post_updated_at
+      = "Updated at:"
+      = @post.updated_at.strftime("%d:%m:%Y")
   %br
   .content
     = @post.content
