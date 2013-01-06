@@ -13,14 +13,14 @@ fi
 ENV="staging"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
-cd /home/deploy/ruby_apps/TripleSundae
+cd /home/deploy/ruby_apps/arkivers_blog
 git stash save dirt-before-${1}
 git reset HEAD --hard
 
 start=`git log|head -1|cut -f 2 -d " "`
-git fetch origin
+git fetch reversehack
 git checkout ${1}
-git pull origin ${1}
+git pull reversehack ${1}
 
 bundle install
 bundle exec rake db:autoupgrade RAILS_ENV=staging
@@ -29,7 +29,7 @@ bundle exec rake assets:precompile RAILS_ENV=staging
 thin -C config/staging.yml -e staging -R config.ru stop
 thin -C config/staging.yml -e staging -R config.ru -d start
 
-subject="[Build][Staging] TripleSundae"
+subject="[Build][Staging] arkivers_blog"
 echo "Deployed branch ${1}" > deployed.txt
 echo "These are the commits which were rolled out just now:" >> deployed.txt
 git log $start..HEAD >> deployed.txt
