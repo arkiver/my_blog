@@ -8,5 +8,11 @@ describe Post do
       post.title = "Test title"
       post.should be_valid
     end
+    it "content" do
+      post.content = nil
+      post.should_not be_valid
+      post.content = "test content"
+      post.should be_valid
+    end
   end
 end
