@@ -1,8 +1,12 @@
 require 'spec_helper'
-
+post = FactoryGirl.build(:post)
 describe Post do
-  # pending "add some examples to (or delete) #{__FILE__}"
-  it "should have a valid title" do
-    
+  describe "should have valid" do
+    it "title" do
+      post.title = nil
+      post.should_not be_valid
+      post.title = "Test title"
+      post.should be_valid
+    end
   end
 end
