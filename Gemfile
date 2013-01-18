@@ -76,4 +76,7 @@ group :test, :development do
   # Pretty printed test output
   gem 'turn', '~> 0.9.4', :require => false
   gem "rspec-rails"
+  gem 'factory_girl_rails'
+  gem 'spork' # <= Add this line
+  gem 'capybara'
 end
