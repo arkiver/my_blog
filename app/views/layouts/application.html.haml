@@ -1,9 +1,10 @@
 !!!
 %html
   %head
-    %title arkiver's archives
-    = stylesheet_link_tag    "application", :media => "all"
-    = javascript_include_tag "application"
+    %title
+      = t(:main_title)
+    = stylesheet_link_tag    :application, :media => "all"
+    = javascript_include_tag :application
     = csrf_meta_tags
   %body
     .left
