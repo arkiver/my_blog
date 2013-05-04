@@ -19,7 +19,7 @@
 .post_box_index{
     background: #F5F5F5;
     padding: 20px;
-    margin-top: 10px;
+    margin-top: 20px;
     border-radius: 20px;
     border:1px solid #DDDDDD
 }
@@ -28,6 +28,7 @@
 }
 #new_post_link{
     float: right;
+    padding: 5px;
 }
 .post_updated_at{
     font-size: 0.6em;
